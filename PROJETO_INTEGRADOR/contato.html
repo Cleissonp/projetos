@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Half Life Historia</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <nav class="nav-url">
+        <ul>
+            <li><a href="index.html">
+        Enredo </a>
+            </li>
+            <li><a href="detonado.html">
+        Detonado</a>
+            </li>
+            <li><a href="noticia.html">
+        Noticias </a>
+            </li>
+            <li><a href="mod.html">
+        Mod </a>
+            </li>
+            <li> <a href="contato.html">
+        Contato</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <img src="imagem/banner.jpg" alt="Banner do Site" />
+    </header>
+    <nav class="menu-ux">
+
+        <p>HALF LIFE > <a href="index.html">Enredo</a></p>
+        <form class="busca">
+            <input type="text" placeholder="busca">
+        </form>
+    </nav>
+
+    <form class="contato">
+        <fieldset>
+            <legend>Identificaçao </legend>
+            <p><label>Nome:<input type="text"></label></p>
+            <p><label>E-mail:<input type="email"></label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <p><label>Frequencia de Email por dia:<input type="range" min="1" max="10"> min:1, max 10</label></p>
+            <p>Escolha o tema que deseja escolher</p>
+            <p><label> <input type=checkbox> Bacon </label></p>
+            <p><label> <input type=checkbox> Extra Queijo </label></p>
+            <p><label> <input type=checkbox> Cebola </label></p>
+            <p><label> <input type=checkbox> Champignons </label></p>
+
+            <p>Jogou esse jogo e suas expançoes </p>
+            <label> <input type=radio name="jogou" > Sim </label>
+            <label> <input type=radio name="jogou"> Nao </label>
+
+            <p>Qual espançao jogou
+                <select>
+                  <option value="decay">Decay</option>
+                  <option value="Oppf">Opposing Force</option>
+                  <option value="BShift">Blue Shift</option>
+                  <option value="Bm" selected>Black Mesa</option>
+            </select>
+            </p>
+
+            <p>Qual mod's voce conhece?<select name="cars" multiple>
+  <option value="cs">Counter Strike</option>
+  <option value="Bhl">Brutal Half Life</option>
+  <option value="Hls">Half Life Source</option>
+  <option value="outros">Outros</option>
+</select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Deixe Recado para nos:</legend>
+            <label> <textarea></textarea></label>
+        </fieldset>
+    </form>
+
+
+    <footer>
+
+        <small>Copyleft 2017 Detona HALF LIFE </small>
+    </footer>
+</body>
+
+</html>
