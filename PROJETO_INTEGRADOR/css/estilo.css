@@ -1,235 +1,275 @@
- @charset "UTF-8";
- html,
- body,
- nav,
- article,
- aside section footer {
-     margin: 0px;
-     padding: 0px;
- }
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans');
 
- html {
-     background-color: hsla(0, 10%, 11%, 0.9);
- }
+/*font-family: 'Ropa Sans', sans-serif;*/
 
- body {
-     margin: auto;
-     text-align: center;
-     width: 960px;
- }
+html,
+body,
+nav,
+article,
+aside section footer {
+    font-family: 'Ropa Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
 
- .nav-url {
-     text-decoration: underline;
-     width: 960px;
-     height: 50px;
-     background: hsla(28, 100%, 50%, 0.46);
- }
+html {
+    background-color: rgba(31, 25, 25, 0.9);
+}
 
- .nav-url ul li :hover {
-     background-color: aliceblue;
+body {
+    margin: auto;
+    text-align: center;
+    width: 960px;
+}
 
-     text-decoration: none;
- }
+.nav-url img {
+    float: left;
+    margin: 5px;
+}
 
- .nav-url ul li {
-     padding: inherit;
-     background: inherit;
-     display: inline-block;
-     text-transform: uppercase;
-     text-decoration: none;
- }
+.nav-url {
+    /*    background: #FA7D26;*/
+    background: #4d4d4d;
+    height: 60px;
+    width: 960px;
+}
+
+.nav-url ul li {
+
+    display: inline;
+    font-size: 1.8em;
+    float: left;
+    padding: 11px;
+    text-transform: uppercase;
 
 
- .menu-ux {
-     float: left;
-     margin: 10px;
-     margin-left: 0px;
-     width: inherit;
+}
 
-     text-transform: uppercase;
- }
+.nav-url a {
+    color: #ff6b04;
+    text-decoration: none;
+}
 
- .menu-ux p {
-     float: left;
-     margin: 0px;
-     width: 200px;
-     text-transform: uppercase;
+.nav-url ul li :hover {
+    text-shadow: 1px 1px 50px #FA7D26;
+    /*    background-color: #FA7D26;*/
+}
 
- }
+/*Menu de Navegaçao e Busca*/
 
- .busca {
-     float: right;
- }
+.busca {
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
 
- .historia {
-     background: #ebe8e5;
-     text-align: left;
-     float: left;
-     width: 640px;
- }
-
- .noticia {
-     background: orange;
-     text-align: left;
-     float: left;
-     width: 450px;
- }
-
- .detonado {
-     padding-top: 50px;
-     background: orange;
-     text-align: left;
-     float: right;
-     width: 620px;
-     padding: 10px;
- }
-
- .info {
-     background: red;
-     float: left;
-     text-align: center;
-     width: 310px;
-     padding: 5px;
- }
-
- .sumario {
-     position: fixed;
-     background: red;
-     float: right;
-     text-align: left;
-     margin-top: 41px;
-     width: 300px;
-     height: 430px;
-     padding: 10px;
- }
-
- .info {
-     background: red;
-     float: left;
-     text-align: center;
-     width: 310px;
- }
-
- table,
- tr,
- th,
- td {
-     margin: 0px auto;
-     border: 1px solid black;
-     border-collapse: collapse;
- }
+.menu-ux {
+    background: yellow;
+    float: left;
+    height: 40px;
+    margin-left: 0px;
+    text-transform: uppercase;
+    width: inherit;
+}
 
 
 
- .topo {
-     position: fixed;
-     bottom: 10px;
-     right: 410px;
-     background: hsla(0, 0%, 100%, 0.29);
-     color: antiquewhite;
-     width: 60px;
-     height: 60px;
- }
-
- .mod1 {
-     float: left;
-     width: 470px;
-     background: #ebe8e5;
-     border: solid 1px blue;
- }
-
- /*formulario contato*/
-
- .contato {
-     margin: 0 auto;
-     padding: 1em;
-     text-align: left;
- }
-
- label {
-     /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
-     display: inline-block;
-     width: auto;
-     text-align: right;
- }
+.menu-ux p {
+    padding-top: 10px;
+    float: left;
+    margin: 0px;
+    width: 200px;
+    text-transform: uppercase;
+}
 
 
- /*Rodape*/
+/*Article do Enredo*/
 
- footer {
-     background: #00A287;
+.historia {
+    background: #ebe8e5;
+    float: left;
+    padding-left: 10px;
+    text-align: left;
+    width: 630px;
+}
 
-     clear: both;
-     text-align: left;
-     height: 400px;
- }
+/*Article do Detonado*/
 
- footer p {
-     float: left;
-     font-size: 1.7em;
-     margin: 3px 0px 0px 5px;
-     width: 840px;
- }
+.detonado {
+    padding-top: 50px;
+    background: orange;
+    text-align: left;
+    float: right;
+    width: 620px;
+    padding: 10px;
+}
 
- footer img {
-     float: left;
-     margin: 5px 10px 5px 5px;
-     border-radius: 100px;
- }
+/*Section da Noticias*/
 
- .nav-url-footer {
-     float: left;
-     /*     padding-left: 90px;*/
-     /*     width: 960px;*/
- }
+.noticia {
+    background: orange;
+    text-align: left;
+    float: left;
+    width: 450px;
+}
 
- #perfil {
+/*Aside do Enredo (Tabela)*/
 
-     font-size: 1.1em;
-     margin: 0px;
-     width: 460px;
- }
+.info {
+    background: red;
+    float: left;
+    text-align: center;
+    width: 310px;
+    padding: 5px;
+}
 
- .social ul {
-     float: right;
-     width: 300px;
-     height: 70px;
- }
+/*Aside contedo o sumario do Detonado*/
 
- .social li {
-     display: inline-block;
-     border-radius: 100px solid black;
- }
+.sumario {
+    position: fixed;
+    background: red;
+    float: right;
+    text-align: left;
+    margin-top: 41px;
+    width: 300px;
+    height: 430px;
+    padding: 10px;
+}
 
- .social a {
-     display: inline-block;
-     background: url('../imagem/social.png');
-     width: 91px;
-     height: 90px;
 
- }
+/*Tabela */
 
- #face {
+table,
+tr,
+th,
+td {
+    margin: 0px auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
 
-     background-position: 1px 92px;
- }
 
- #face:hover {
-     background-position: 1px 0px;
- }
 
- #inst {
-     background-position: 184px 92px;
- }
+.topo {
+    position: fixed;
+    top: calc(100% - 63px);
+    left: calc(100% - 62px);
+    background: hsla(0, 0%, 100%, 0.29);
+    color: antiquewhite;
+    width: 60px;
+    height: 60px;
+}
 
- #inst:hover {
-     background-position: 184px 0px;
- }
+.mod1 {
+    float: left;
+    padding: 10px;
+    width: 458px;
+    background: #ebe8e5;
+    border: solid 1px blue;
+}
 
- #twi {
-     background-position: 93px 93px;
- }
+/*formulario contato*/
 
- #twi:hover {
-     background-position: 93px 0px;
- }
+.contato {
+    clear: both;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: left;
+    background: red;
+}
+
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: auto;
+    text-align: right;
+}
+
+
+/*Rodape*/
+
+footer {
+    background: #00A287;
+    clear: both;
+    height: 270px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+footer p {
+    float: left;
+    font-size: 1.7em;
+    margin: 15px 0px 20px 0px;
+    width: 470px;
+}
+
+footer img {
+    float: left;
+    margin: 5px 10px 5px 5px;
+    border-radius: 100px;
+}
+
+.nav-url-footer {
+    float: left;
+}
+
+.nav-url-footer ul li {
+    list-style-type: none;
+    margin-left: 73px;
+}
+
+#perfil {
+
+    font-size: 1.1em;
+    margin: 0px;
+    width: 460px;
+}
+
+
+
+.social li {
+    display: inline-block;
+}
+
+.social ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    width: 285px;
+    height: 90px;
+}
+
+.social a {
+    display: inline-block;
+    background: url('../imagem/social.png');
+    width: 91px;
+    height: 90px;
+
+}
+
+
+#face {
+
+    background-position: 0px 92px;
+}
+
+#face:hover {
+    background-position: 0px 0px;
+}
+
+#inst {
+    background-position: 184px 93px;
+}
+
+#inst:hover {
+    background-position: 184px 0px;
+}
+
+#twi {
+    background-position: 93px 93px;
+}
+
+#twi:hover {
+    background-position: 93px 0px;
+}
