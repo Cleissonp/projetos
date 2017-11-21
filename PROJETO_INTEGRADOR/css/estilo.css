@@ -14,7 +14,7 @@ aside section footer {
 }
 
 html {
-    background-color: rgba(31, 25, 25, 0.9);
+    background-color: #EBE8E5;
 }
 
 body {
@@ -23,6 +23,8 @@ body {
     width: 960px;
 }
 
+/*Menu NAV topo*/
+
 .nav-url img {
     float: left;
     margin: 5px;
@@ -30,59 +32,63 @@ body {
 
 .nav-url {
     /*    background: #FA7D26;*/
-    background: #4d4d4d;
+    background: #FF5617;
     height: 60px;
     width: 960px;
 }
 
+
+
 .nav-url ul li {
 
-    display: inline;
-    font-size: 1.8em;
+    display: inline-block;
+    font-size: 1.4em;
     float: left;
+    margin: 1px;
     padding: 11px;
     text-transform: uppercase;
-
-
 }
 
 .nav-url a {
-    color: #ff6b04;
+    color: white;
     text-decoration: none;
 }
 
 .nav-url ul li :hover {
-    text-shadow: 1px 1px 50px #FA7D26;
-    /*    background-color: #FA7D26;*/
+    /*    text-shadow: 1px 1px 50px #FA7D26;*/
+    background-color: #FF6931;
+    color: black;
+
 }
 
 /*Menu de Navegaçao e Busca*/
 
-.busca {
-    float: right;
-    padding-top: 10px;
-    padding-right: 10px;
-}
-
 .menu-ux {
     background: yellow;
     float: left;
-    height: 40px;
-    margin-left: 0px;
-    text-transform: uppercase;
     width: inherit;
+
 }
-
-
 
 .menu-ux p {
-    padding-top: 10px;
     float: left;
-    margin: 0px;
-    width: 200px;
+    margin-left: 5px;
     text-transform: uppercase;
 }
 
+
+.busca {
+    float: right;
+    padding-top: 10px;
+    margin-right: 5px;
+
+}
+
+.busca input {
+    border-radius: 10px;
+    height: 25px;
+    padding-left: 10px;
+}
 
 /*Article do Enredo*/
 
@@ -97,20 +103,19 @@ body {
 /*Article do Detonado*/
 
 .detonado {
-    padding-top: 50px;
     background: orange;
-    text-align: left;
     float: right;
+    padding: 50px 10px;
+    text-align: left;
     width: 620px;
-    padding: 10px;
 }
 
 /*Section da Noticias*/
 
 .noticia {
     background: orange;
-    text-align: left;
     float: left;
+    text-align: left;
     width: 450px;
 }
 
@@ -119,22 +124,21 @@ body {
 .info {
     background: red;
     float: left;
+    padding: 5px;
     text-align: center;
     width: 310px;
-    padding: 5px;
+    height: 780px;
 }
 
 /*Aside contedo o sumario do Detonado*/
 
 .sumario {
-    position: fixed;
     background: red;
     float: right;
-    text-align: left;
-    margin-top: 41px;
-    width: 300px;
     height: 430px;
     padding: 10px;
+    text-align: left;
+    width: 300px;
 }
 
 
@@ -152,40 +156,45 @@ td {
 
 
 .topo {
-    position: fixed;
-    top: calc(100% - 63px);
-    left: calc(100% - 62px);
     background: hsla(0, 0%, 100%, 0.29);
     color: antiquewhite;
-    width: 60px;
+    left: calc(100% - 62px);
     height: 60px;
+    position: fixed;
+    width: 60px;
+    top: calc(100% - 63px);
 }
 
 .mod1 {
-    float: left;
-    padding: 10px;
-    width: 458px;
     background: #ebe8e5;
     border: solid 1px blue;
+    margin: 4px;
+    float: left;
+    padding: 10px;
+    width: 449px;
 }
 
 /*formulario contato*/
 
 .contato {
-    clear: both;
-    margin: 0 auto;
-    padding: 1em;
-    text-align: left;
     background: red;
+    clear: both;
+    padding: 1em;
+    margin: 0 auto;
+    text-align: left;
 }
 
 label {
     /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
     display: inline-block;
-    width: auto;
-    text-align: right;
+    width: 50px;
+    margin-right: 10px;
+    text-align: left;
 }
 
+input {
+    /*    margin: px;*/
+}
 
 /*Rodape*/
 
@@ -201,22 +210,13 @@ footer p {
     float: left;
     font-size: 1.7em;
     margin: 15px 0px 20px 0px;
-    width: 470px;
+    width: 376px;
 }
 
 footer img {
     float: left;
     margin: 5px 10px 5px 5px;
-    border-radius: 100px;
-}
-
-.nav-url-footer {
-    float: left;
-}
-
-.nav-url-footer ul li {
-    list-style-type: none;
-    margin-left: 73px;
+    /*    border-radius: 100px;*/
 }
 
 #perfil {
@@ -228,48 +228,66 @@ footer img {
 
 
 
+
+.nav-url-footer {
+    float: left;
+}
+
+.nav-url-footer ul li {
+    list-style-type: none;
+    margin-left: 73px;
+}
+
+
+
 .social li {
     display: inline-block;
+    height: 119px;
 }
 
 .social ul {
     float: right;
-    margin: 0px;
-    padding: 0px;
-    width: 285px;
-    height: 90px;
+    height: 140px;
+    margin-top: -65px;
+    width: 290px;
 }
 
 .social a {
-    display: inline-block;
     background: url('../imagem/social.png');
-    width: 91px;
+    display: inline-block;
     height: 90px;
+    width: 91px;
 
 }
-
 
 #face {
 
     background-position: 0px 92px;
+    opacity: 0.5;
 }
 
 #face:hover {
+    opacity: 1;
     background-position: 0px 0px;
 }
 
 #inst {
     background-position: 184px 93px;
+    opacity: 0.5;
 }
+
 
 #inst:hover {
     background-position: 184px 0px;
+    opacity: 1;
 }
 
 #twi {
     background-position: 93px 93px;
+    opacity: 0.5;
 }
 
 #twi:hover {
     background-position: 93px 0px;
+    opacity: 1;
 }
