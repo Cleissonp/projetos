@@ -150,7 +150,7 @@ body {
 
 .sumario ol {
     background-color: rgba(0, 0, 0, 0.05);
-    box-shadow: 1px 1px 1px 1px black;
+    /*    box-shadow: 1px 1px 1px 1px black;*/
 }
 
 .sumario li {
@@ -174,9 +174,12 @@ table,
 tr,
 th,
 td {
-    margin: 0px auto;
-    border: 1px solid black;
+    border: 2px solid #939393;
     border-collapse: collapse;
+    color: aliceblue;
+    margin: 5px auto;
+    padding: 1px;
+    text-align: left;
 }
 
 
