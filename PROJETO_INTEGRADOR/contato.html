@@ -32,45 +32,54 @@
 
     <form class="contato">
         <fieldset>
-            <legend>Identificaçao </legend>
-            <p><label>Nome:</label><input type="text"></p>
-            <p><label>E-mail:</label><input type="email"></p>
-        </fieldset>
-        <fieldset>
-            <legend>Preferencias</legend>
-            <p><label>Frequencia de Email por dia:</label><input type="range" min="1" max="10"> min:1, max 10</p>
-            <p>Escolha o tema que deseja escolher</p>
-            <p><input type=checkbox> Bacon </p>
-            <p><input type=checkbox> Extra Queijo </p>
-            <p><input type=checkbox> Cebola </p>
-            <p><input type=checkbox> Champignons</p>
-            <p>Jogou esse jogo e suas expançoes</p>
-            <input type=radio name="jogou"> Sim
-            <input type=radio name="jogou"> Nao
+            <fieldset id="identificacao">
+                <legend>Identificaçao </legend>
+                <p><label>Nome:</label><input type="text"></p>
+                <p><label>E-mail:</label><input type="email"></p>
 
-            <p>Qual espançao jogou
-                <select>
+            </fieldset>
+            <fieldset id="ajuda-form">
+
+            </fieldset>
+            <fieldset id="preferencias">
+                <legend>Preferencias</legend>
+                <p><label class="posicao">Frequencia de Email por dia:</label><input type="range" min="1" max="10"> min:1, max 10</p>
+                <p>Escolha o tema que deseja escolher</p>
+                <p><input type=checkbox> Bacon </p>
+                <p><input type=checkbox> Extra Queijo </p>
+                <p><input type=checkbox> Cebola </p>
+                <p><input type=checkbox> Champignons</p>
+                <p>Jogou esse jogo e suas expançoes</p>
+                <input type=radio name="jogou"> Sim
+                <input type=radio name="jogou"> Nao
+
+                <p>Qual espançao jogou
+                    <select>
                     <option value="decay">Decay</option>
                     <option value="Oppf">Opposing Force</option>
                     <option value="BShift">Blue Shift</option>
                     <option value="Bm" selected>Black Mesa</option>
                 </select>
-            </p>
+                </p>
 
-            <p><label>Qual mod's voce conhece?</label>
-</p>
-                <select name="cars" multiple>
+                <p><label class="posicao">Qual mod's voce conhece?</label>
+
+                    <select name="cars" multiple>
                     <option value="cs">Counter Strike</option>
                     <option value="Bhl">Brutal Half Life</option>
                     <option value="Hls">Half Life Source</option>
                     <option value="outros">Outros</option>
                 </select>
-        </fieldset>
-        <fieldset>
-            <legend>Deixe Recado para nos:</legend>
-            <label> <textarea></textarea></label>
+                </p>
+            </fieldset>
+            <fieldset id="recado">
+                <legend>Deixe Recado para nos:</legend>
+                <label> <textarea></textarea></label>
+            </fieldset>
+
         </fieldset>
     </form>
+
 
 
     <footer>

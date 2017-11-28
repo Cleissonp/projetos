@@ -35,12 +35,13 @@ body {
     background: #FF5617;
     height: 60px;
     width: 960px;
+    border: black;
 }
 
 
 
 .nav-url ul li {
-
+    /*    border: black;*/
     display: inline-block;
     font-size: 1.4em;
     float: left;
@@ -51,11 +52,14 @@ body {
 
 .nav-url a {
     color: white;
+    display: inline-block;
+    text-shadow: 1px 2px 2px #f0c575;
+    width: 95px;
     text-decoration: none;
 }
 
 .nav-url ul li :hover {
-    /*    text-shadow: 1px 1px 50px #FA7D26;*/
+    /*    text-shadow: 1px 1px 5px #f0834c;*/
     background-color: #FF6931;
     color: black;
 
@@ -64,16 +68,19 @@ body {
 /*Menu de Navegaçao e Busca*/
 
 .menu-ux {
-    background: yellow;
+    /*    border: solid;*/
+    /*    margin: -1px;*/
+    background: #FF8316;
     float: left;
     width: inherit;
-
+    /*    font-size: 1.5em;*/
 }
 
 .menu-ux p {
     float: left;
     margin-left: 5px;
     text-transform: uppercase;
+
 }
 
 
@@ -103,9 +110,9 @@ body {
 /*Article do Detonado*/
 
 .detonado {
-    background: orange;
+    background: #ebe8e5;
     float: right;
-    padding: 50px 10px;
+    padding: 5px 10px;
     text-align: left;
     width: 620px;
 }
@@ -133,14 +140,33 @@ body {
 /*Aside contedo o sumario do Detonado*/
 
 .sumario {
-    background: red;
+    background: #E85914;
+    font-size: 1.3em;
     float: right;
-    height: 430px;
     padding: 10px;
     text-align: left;
     width: 300px;
 }
 
+.sumario ol {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.sumario li {
+    padding: 20px;
+    list-style: none;
+}
+
+.sumario li a {
+    color: aliceblue;
+}
+
+.sumario a:hover {
+
+    color: black;
+    border-radius: 5px;
+}
 
 /*Tabela */
 
@@ -166,30 +192,71 @@ td {
 }
 
 .mod1 {
-    background: #ebe8e5;
+    background: #FFB43C;
     border: solid 1px blue;
     margin: 4px;
     float: left;
-    padding: 10px;
-    width: 449px;
+    padding: 9px;
+    width: 451px;
 }
 
 /*formulario contato*/
 
 .contato {
-    background: red;
+    /*    background: red;*/
+    /*    display: inline-block;*/
     clear: both;
     padding: 1em;
-    margin: 0 auto;
+    /*    margin: 0 auto;*/
     text-align: left;
+    /*    width: 480px;*/
 }
 
-label {
+fieldset {
+
+    width: auto;
+}
+
+
+
+
+
+#identificacao {
+    float: left;
+    width: 410px;
+    ;
+
+}
+
+
+#preferencias {
+    /*    clear: right;*/
+    float: left;
+    width: 410px;
+}
+
+#recado {
+    float: left;
+    width: 490px;
+}
+
+#ajuda-form {
+    float: right;
+    margin-top: 8px;
+    width: 420px;
+    height: 560px;
+}
+
+*/ label {
     /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
     display: inline-block;
     width: 50px;
     margin-right: 10px;
     text-align: left;
+}
+
+.posicao {
+    width: 100px;
 }
 
 input {
@@ -199,11 +266,17 @@ input {
 /*Rodape*/
 
 footer {
-    background: #00A287;
+    /*    background: #00A287;*/
+    background: #B0461C;
     clear: both;
+    color: aliceblue;
     height: 270px;
     padding-left: 10px;
     text-align: left;
+}
+
+footer a {
+    color: aliceblue;
 }
 
 footer p {
@@ -216,7 +289,13 @@ footer p {
 footer img {
     float: left;
     margin: 5px 10px 5px 5px;
-    /*    border-radius: 100px;*/
+    opacity: 0.5;
+    border-radius: 100px;
+}
+
+footer img:hover {
+    opacity: 1;
+    border-radius: 0px;
 }
 
 #perfil {
