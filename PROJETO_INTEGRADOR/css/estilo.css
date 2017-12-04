@@ -28,6 +28,7 @@ body {
 .nav-url img {
     float: left;
     margin: 5px;
+
 }
 
 .nav-url {
@@ -50,26 +51,41 @@ body {
     text-transform: uppercase;
 }
 
-.nav-url a {
+
+.nav-url a img {
+    transform: scale(.8);
+    float: left;
+}
+
+.nav-url a img:hover {
+    transform: scale(1.1);
+
+}
+
+/*
+.nav-url a img {
+    display: block;
+    float: left;
+}
+*/
+
+.nav-url ul li a {
     color: white;
     display: inline-block;
     text-shadow: 1px 2px 2px #f0c575;
-    width: 95px;
     text-decoration: none;
 }
 
 .nav-url ul li :hover {
-    /*    text-shadow: 1px 1px 5px #f0834c;*/
-    background-color: #FF6931;
     color: black;
-
+    transition: .3s ease;
+    transform: scale(1.5);
 }
 
 /*Menu de Navegaçao e Busca*/
 
 .menu-ux {
-    /*    border: solid;*/
-    /*    margin: -1px;*/
+
     background: #FF8316;
     float: left;
     width: inherit;
@@ -92,7 +108,7 @@ body {
 }
 
 .busca input {
-    border-radius: 10px;
+    /*    border-radius: 10px;*/
     height: 25px;
     padding-left: 10px;
 }
@@ -120,11 +136,37 @@ body {
 /*Section da Noticias*/
 
 .noticia {
-    background: orange;
+    /*    background: orange;*/
     float: left;
+    padding-left: 5px;
     text-align: left;
     width: 450px;
 }
+
+.noticia-sub {
+
+    /*    background: orange;*/
+    margin-left: 40px;
+    float: left;
+    text-align: left;
+    width: 450px;
+    height: 600px;
+
+}
+
+
+
+.noticia-sub1 {
+    /*    background: #685F23;*/
+    margin-left: 40px;
+    float: left;
+    text-align: left;
+    padding: 5px;
+    width: 452px;
+}
+
+
+
 
 /*Aside do Enredo (Tabela)*/
 
@@ -150,7 +192,6 @@ body {
 
 .sumario ol {
     background-color: rgba(0, 0, 0, 0.05);
-    /*    box-shadow: 1px 1px 1px 1px black;*/
 }
 
 .sumario li {
@@ -185,13 +226,15 @@ td {
 
 
 .topo {
-    background: hsla(0, 0%, 100%, 0.29);
-    color: antiquewhite;
-    left: calc(100% - 62px);
-    height: 60px;
+
+    left: calc(100% - 180px);
     position: fixed;
-    width: 60px;
     top: calc(100% - 63px);
+    opacity: .5;
+}
+
+.topo:hover {
+    opacity: 1;
 }
 
 .mod1 {
@@ -206,54 +249,47 @@ td {
 /*formulario contato*/
 
 .contato {
-    /*    background: red;*/
-    /*    display: inline-block;*/
     clear: both;
     padding: 1em;
-    /*    margin: 0 auto;*/
     text-align: left;
-    /*    width: 480px;*/
 }
 
-fieldset {
-
-    width: auto;
+.contato button {
+    clear: both;
+    float: left;
 }
-
-
-
 
 
 #identificacao {
     float: left;
     width: 410px;
-    ;
-
 }
 
 
 #preferencias {
-    /*    clear: right;*/
     float: left;
     width: 410px;
 }
 
 #recado {
+    clear: both;
     float: left;
-    width: 490px;
+    width: 410px;
 }
 
 #ajuda-form {
     float: right;
     margin-top: 8px;
+    padding: 0px;
     width: 420px;
     height: 560px;
 }
 
-*/ label {
-    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+label {
+    /*    Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas*/
     display: inline-block;
     width: 50px;
+    background: red;
     margin-right: 10px;
     text-align: left;
 }
@@ -373,3 +409,9 @@ footer img:hover {
     background-position: 93px 0px;
     opacity: 1;
 }
+
+/*
+#inicio {
+    float: left;
+    width: 30%;
+}*/
