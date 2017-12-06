@@ -155,7 +155,7 @@ article p {
 
 .noticia ul li {
     float: left;
-    background: #6F8088;
+    background: #FFB43C;
     display: inline-block;
     width: 220px;
     padding: 30px;
@@ -176,7 +176,7 @@ article p {
     cursor: pointer;
     transition: .9s ease;
     transform: scale(1.2);
-    box-shadow: 0px 0px 20px 10px hsl(199, 7%, 38%);
+    box-shadow: 0px 0px 20px 10px rgba(119, 119, 119, 0.11);
 }
 
 .noticia ul li figure img {
@@ -267,11 +267,19 @@ td {
     float: left;
     padding: 9px;
     width: 451px;
+
+}
+
+.mod1 p {
     text-align: justify;
 }
 
 .mod1 img {
     margin: auto 100px;
+}
+
+.mod1 h2 {
+    text-align: center;
 }
 
 /*formulario contato*/
