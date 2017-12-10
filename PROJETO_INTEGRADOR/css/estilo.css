@@ -1,13 +1,9 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Prociono|Ropa+Sans');
-
 /*
 font-family: 'Prociono',serif;
-font-family: 'Ropa Sans',
-sans-serif;
+font-family: 'Ropa Sans',sans-serif;
 */
-
-* {}
 
 html,
 body,
@@ -30,25 +26,19 @@ body {
 }
 
 /*Menu NAV topo*/
-
 .nav-url img {
     float: left;
     margin: 5px;
-
 }
 
 .nav-url {
-    /*    background: #FA7D26;*/
-    background: #FF5617;
+    background-color:#FF5617;
     height: 60px;
     width: 960px;
     border: black;
 }
 
-
-
 .nav-url ul li {
-    /*    border: black;*/
     display: inline-block;
     font-size: 1.4em;
     float: left;
@@ -57,15 +47,13 @@ body {
     text-transform: uppercase;
 }
 
-
 .nav-url a img {
-    transform: scale(.8);
     float: left;
+    transform: scale(.8);
 }
 
 .nav-url a img:hover {
     transform: scale(1.1);
-
 }
 
 .nav-url ul li a {
@@ -82,38 +70,30 @@ body {
 }
 
 /*Menu de Navegaçao e Busca*/
-
 .menu-ux {
-
     background: #FF8316;
     float: left;
     width: inherit;
-    /*    font-size: 1.5em;*/
 }
 
 .menu-ux p {
     float: left;
     margin-left: 5px;
     text-transform: uppercase;
-
 }
-
 
 .busca {
     float: right;
     padding-top: 10px;
     margin-right: 5px;
-
 }
 
 .busca input {
-    /*    border-radius: 10px;*/
     height: 25px;
     padding-left: 10px;
 }
 
 /*Article do Enredo*/
-
 .historia {
     background: #ebe8e5;
     float: left;
@@ -123,13 +103,11 @@ body {
 }
 
 /*Fonte "p" do article */
-
 article p {
     font-family: 'Prociono', serif;
 }
 
 /*Article do Detonado*/
-
 .detonado {
     background: #ebe8e5;
     float: right;
@@ -139,38 +117,32 @@ article p {
 }
 
 /*Section da Noticias*/
-
 .noticia {
-    /*    background: orange;*/
     float: left;
     padding-left: 5px;
     text-align: left;
-    /*    width: 450px;*/
 }
 
 .noticia h2 {
     display: none;
-
 }
 
 .noticia ul li {
-    float: left;
     background: #FFB43C;
     display: inline-block;
-    width: 220px;
-    padding: 30px;
+    float: left;
+    list-style: none;
     height: 370px;
     margin-top: 40px;
     margin-left: 10px;
     margin-bottom: 40px;
-    list-style: none;
+    padding: 30px;
+    width: 220px;
 }
 
 .noticia ul li figure {
     margin-left: 10px;
-    /*    background: red;*/
-    /*    opacity: .2;*/
-}
+ }
 
 .noticia ul li:hover {
     cursor: pointer;
@@ -180,17 +152,13 @@ article p {
 }
 
 .noticia ul li figure img {
-
     transform: scale(1.2);
-    /*    box-shadow: 0px 0px 40px 10px black;*/
-}
+ }
 
 .noticia figcaption {
-
     color: white;
-    margin-top: 2em;
     font-size: 1.6em;
-    /*    text-transform: uppercase;*/
+    margin-top: 2em;
 }
 
 .info {
@@ -203,7 +171,6 @@ article p {
 }
 
 /*Aside contedo o sumario do Detonado*/
-
 .sumario {
     background: #E85914;
     font-size: 1.3em;
@@ -227,13 +194,11 @@ article p {
 }
 
 .sumario a:hover {
-
     color: black;
     border-radius: 5px;
 }
 
 /*Tabela */
-
 table,
 tr,
 th,
@@ -246,14 +211,11 @@ td {
     text-align: left;
 }
 
-
-
 .topo {
-
     left: calc(100% - 180px);
+    opacity: .5;
     position: fixed;
     top: calc(100% - 63px);
-    opacity: .5;
 }
 
 .topo:hover {
@@ -262,12 +224,10 @@ td {
 
 .mod1 {
     background: #FFB43C;
-    /*    border: solid 1px blue;*/
-    margin: 4px;
     float: left;
+    margin: 4px;
     padding: 9px;
     width: 451px;
-
 }
 
 .mod1 p {
@@ -283,7 +243,6 @@ td {
 }
 
 /*formulario contato*/
-
 .contato {
     clear: both;
     padding: 1em;
@@ -294,7 +253,6 @@ td {
     clear: both;
     float: left;
 }
-
 
 #identificacao {
     float: left;
@@ -311,7 +269,6 @@ td {
 }
 
 #preferencias select {
-
     width: 80%;
 }
 
@@ -352,9 +309,7 @@ input [type="text"] {
     /*    margin: 0px auto;*/
     /*    width: 90%;*/
 }
-
 /*Rodape*/
-
 footer {
     /*    background: #00A287;*/
     background: #B0461C;
@@ -389,14 +344,10 @@ footer img:hover {
 }
 
 #perfil {
-
     font-size: 1.1em;
     margin: 0px;
     width: 460px;
 }
-
-
-
 
 .nav-url-footer {
     float: left;
@@ -407,8 +358,6 @@ footer img:hover {
     margin-left: 73px;
     text-transform: uppercase;
 }
-
-
 
 .social li {
     display: inline-block;
@@ -446,7 +395,6 @@ footer img:hover {
     opacity: 0.5;
 }
 
-
 #inst:hover {
     background-position: 184px 0px;
     opacity: 1;
@@ -461,9 +409,3 @@ footer img:hover {
     background-position: 93px 0px;
     opacity: 1;
 }
-
-/*
-#inicio {
-    float: left;
-    width: 30%;
-}*/
