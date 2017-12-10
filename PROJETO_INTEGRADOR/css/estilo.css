@@ -33,9 +33,9 @@ body {
 
 .nav-url {
     background-color:#FF5617;
+    border: black;
     height: 60px;
     width: 960px;
-    border: black;
 }
 
 .nav-url ul li {
@@ -59,8 +59,8 @@ body {
 .nav-url ul li a {
     color: white;
     display: inline-block;
-    text-shadow: 1px 2px 2px #f0c575;
     text-decoration: none;
+    text-shadow: 1px 2px 2px #f0c575;
 }
 
 .nav-url ul li :hover {
@@ -84,8 +84,8 @@ body {
 
 .busca {
     float: right;
-    padding-top: 10px;
     margin-right: 5px;
+    padding-top: 10px;
 }
 
 .busca input {
@@ -131,8 +131,8 @@ article p {
     background: #FFB43C;
     display: inline-block;
     float: left;
-    list-style: none;
     height: 370px;
+    list-style: none;
     margin-top: 40px;
     margin-left: 10px;
     margin-bottom: 40px;
@@ -145,10 +145,10 @@ article p {
  }
 
 .noticia ul li:hover {
+    box-shadow: 0px 0px 20px 10px rgba(119, 119, 119, 0.11);
     cursor: pointer;
     transition: .9s ease;
     transform: scale(1.2);
-    box-shadow: 0px 0px 20px 10px rgba(119, 119, 119, 0.11);
 }
 
 .noticia ul li figure img {
@@ -164,10 +164,10 @@ article p {
 .info {
     background: red;
     float: left;
+    height: 780px;
     padding: 5px;
     text-align: center;
     width: 310px;
-    height: 780px;
 }
 
 /*Aside contedo o sumario do Detonado*/
@@ -185,8 +185,8 @@ article p {
 }
 
 .sumario li {
-    padding: 20px;
     list-style: none;
+    padding: 20px;
 }
 
 .sumario li a {
@@ -194,8 +194,8 @@ article p {
 }
 
 .sumario a:hover {
-    color: black;
     border-radius: 5px;
+    color: black;
 }
 
 /*Tabela */
@@ -281,7 +281,6 @@ td {
 #recado textarea {
     width: 400px;
     height: 100px;
-
 }
 
 #ajuda-form {
@@ -305,10 +304,6 @@ label {
     width: 100px;
 }
 
-input [type="text"] {
-    /*    margin: 0px auto;*/
-    /*    width: 90%;*/
-}
 /*Rodape*/
 footer {
     /*    background: #00A287;*/
@@ -376,7 +371,6 @@ footer img:hover {
     display: inline-block;
     height: 90px;
     width: 91px;
-
 }
 
 #face {
